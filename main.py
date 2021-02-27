@@ -26,7 +26,7 @@ def print_visual(visual):
         print("")
 
 
-def is_mine(feld, x, y):
+def is_mine(feld: dict, x: int, y: int) -> bool:
     if feld[x, y] == 0:
         return False
     return True
