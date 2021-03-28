@@ -5,12 +5,8 @@ field_size = 8
 
 
 def create_mine_field():
-    mine_field = []
-    for i in range(0, field_size ** 2):
-        mine_field.append(randint(0, 1))
-    mine_field = np.array(mine_field)
-    mine_field = mine_field.reshape(field_size, field_size)
-    return mine_field
+    mine_field = np.array([randint(0, 1) for _ in range(0, field_size ** 2)])
+    return mine_field.reshape(field_size, field_size)
 
 
 def create_visual():
