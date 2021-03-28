@@ -4,6 +4,7 @@ from main import create_mine_field, is_mine
 def test_create_mine_field():
     field = create_mine_field()
     assert isinstance(field, list)
+    assert set(field) == {0, 1}
 
 
 def test_is_mine():

@@ -4,10 +4,9 @@ field_size = 8
 
 
 def create_mine_field():
-    mine_field = {}
-    for x in range(0, field_size):
-        for y in range(0, field_size):
-            mine_field.update({(x, y): randint(0, 1)})
+    mine_field = []
+    for i in range(0, field_size**2):
+        mine_field.append(randint(0, 1))
     return mine_field
 
 
