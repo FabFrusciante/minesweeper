@@ -28,8 +28,8 @@ def print_visual(visual):
         print("")
 
 
-def is_mine(feld: dict, x: int, y: int) -> bool:
-    if feld[x, y] == 0:
+def is_mine(field: np.ndarray, x: int, y: int) -> bool:
+    if field[x, y] == 0:
         return False
     return True
 

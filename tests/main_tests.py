@@ -11,13 +11,13 @@ def test_create_mine_field():
 
 
 def test_is_mine():
-    field = {(1, 2): 0}
-    x = 1
-    y = 2
+    field = np.array([[0]])
+    x = 0
+    y = 0
     mine = is_mine(field, x, y)
     assert isinstance(mine, bool)
     assert mine is False
 
-    field = {(1, 2): 1}
+    field = np.array([[1]])
     mine = is_mine(field, x, y)
     assert mine is True
